@@ -1,0 +1,134 @@
+body {
+  font-family: "Raleway", "sans-serif";
+  background-color: aliceblue;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("../static/banner.jpg");
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(red, green, blue, alpha);
+  z-index: 1;
+}
+
+header .banner {
+  position: absolute;
+  top: 75%;
+  left: 24px;
+  transform: translateY(-50%);
+  z-index: 2;
+  margin: 0;
+}
+
+.banner h1 {
+  color: black;
+  font-size: 48px;
+  font-family: "Rubik", "sans-serif";
+}
+
+.banner p {
+  color: black;
+  font-size: 20px;
+}
+
+main {
+  padding: 20px;
+  max-width: 1280px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.quiz-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.quiz-cards .card {
+  width: 300px;
+  background-color: bisque;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(red, green, blue, alpha);
+  overflow: hidden;
+  transition: transform 0, 3s ease-in-out;
+}
+
+.quiz-cards .card:hover {
+  transform: scale(1.05);
+}
+
+.quiz-cards .card-header {
+  position: relative;
+  z-index: 0;
+}
+
+.quiz-cards .card-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  position: relative;
+}
+
+.quiz-cards .card-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(red, green, blue, alpha);
+  z-index: 1;
+}
+
+.quiz-cards .card-header h3 {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  color: aliceblue;
+  font-size: 24px;
+  margin: 0;
+}
+
+.quiz-cards .card-content {
+  padding: 12px;
+}
+
+.quiz-cards .card-content p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 14px;
+}
+
+.quiz-cards .card-footer {
+  padding: 20px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.quiz-cards .card-footer button {
+  background-color: #0ea5e9;
+  border: none;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Плавный эффект изменения цвета фона */
+}
+
+.card-footer button:hover {
+  background-color: #0369a1; /* Меняется цвет кнопки при наведении */
+}
