@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Sience Quiz</title>
+    <link rel="stylesheet" href="../css/utilities.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body class="font-raleway">
+    <main class=".container-sm">
+      <h2 class="text-3xl font-rubik mb-2 text-center">nauchnaja viktorina</h2>
+      <p class="text-center text-gray-500 mb-5">
+        proverj svoji znanija v nauke!
+      </p>
+
+      <div class="quiz-card mb-5 bg-light p-4 rounded shadow-md">
+        <h3 class="text-dark font-rubik mb-3">
+          1. kakoj gaz rastenie videlajut pri fotosinteze?
+        </h3>
+        <div class="quiz-options mb-4">
+          <label for="q1-opt1" class="quiz-option mb-3">
+            <input type="radio" id="q1-opt1" name="q1" value="oxygen" />
+            kislorod
+          </label>
+          <label for="q1-opt2" class="quiz-option mb-3">
+            <input type="radio" id="q1-opt2" name="q1" value="carbonDiox" />
+            uglekislij gaz
+          </label>
+          <label for="q1-opt3" class="quiz-option mb-3">
+            <input type="radio" id="q1-opt3" name="q1" value="chlorine" />
+            hlor
+          </label>
+        </div>
+        <p class="quiz-points text-gray-500">ochki: 1</p>
+      </div>
+
+      <div class="quiz-card mb-5 bg-light p-4 rounded shadow-md">
+        <h3 class="text-dark font-rubik mb-3">
+          2. chto teshelee - 1kg sheleza ili 1kg vati?
+        </h3>
+        <div class="quiz-options mb-4">
+          <label for="q2-opt1" class="quiz-option mb-3">
+            <input type="radio" id="q2-opt1" name="q2" value="shelezo" />
+            shelezo
+          </label>
+          <label for="q2-opt2" class="quiz-option mb-3">
+            <input type="radio" id="q2-opt2" name="q2" value="vata" />
+            vata
+          </label>
+          <label for="q2-opt3" class="quiz-option mb-3">
+            <input type="radio" id="q2-opt3" name="q2" value="odinakovie" />
+            oni odinakovie
+          </label>
+        </div>
+
+        <p class="quiz-points text-gray-500">ochki: 1</p>
+      </div>
+
+      <div class="text-center">
+        <button class="btn bg-blue-500 text-white p-4">zavershitj</button>
+      </div>
+    </main>
+  </body>
+</html>
